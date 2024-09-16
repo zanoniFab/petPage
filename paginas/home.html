@@ -9,46 +9,58 @@
 </head>
 <body class="d-flex  flex-column align-items-center h-100">
     <header class="w-100">
-        <nav class="navbar" class="d-flex align-items-center">
+        <nav class="navbar" id="navbar" class="d-flex align-items-center">
             <a class="navbar-brand" href="../index.html">
-                <img src="../assets/logo.avif" width="30" height="30" alt="">
+                <img src="../assets/logo.avif" alt="logo">
             </a>
             <div class="navbar-btns">
               <ul class="navbar-nav mr-auto flex-row w-10 align-items-center">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Loja</a>
+                <li class="nav-item m-10 active">
+                  <a class="nav-link" href="./home.html">Loja</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item m-10">
                   <a class="nav-link" href="#">Agenda</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item m-10" id="logout">
+                  <a class="nav-link" href="../index.html">Sair</a>
+                </li>
+                <li class="nav-item m-10">
                   <a class="nav-link" href="./minhaConta.html">Minha Conta</a>
                 </li>
               </ul>
             </div>
           </nav>
-      </header>
-    <div class="container">
+    </header>
+    <div class="h-100 w-100 align-items-center d-flex flex-column">
         <div class="row">
-            <div class="col-3">
-              <form class="form-inline">
+            <div class="w-100">
+              <form class="form-inline w-100">
                 <div class="form-group mx-sm-3 mb-2">
                   <input type="text" class="form-control" id="buscarProduto" placeholder="Informe um produto">
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Buscar</button>
               </form>
-            <div class="w-100">
-                <div class="d-flex flex-column bd-highlight mb-3">
-                    <button type="button" class="btn btn-primary">Ração Seca</button>
-                    <button type="button" class="btn btn-primary">Ração Molhada</button>
-                </div>
-                <div id="listaRacoes">
-
-                </div>
-            </div>             
-
             </div>
         </div>
+        <div class="w-100 d-flex">
+          <div class="col-sm-3 mt-5">
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <button type="button" class="btn btn-primary mb-3" onClick="filtraRacao(`seca`)">Ração Seca</button>
+                <button type="button" class="btn btn-primary mb-3" onClick="filtraRacao(`molhada`)">Ração Molhada</button>
+                <button type="button" class="btn btn-primary mb-3" onClick="exibeTodasRacoes()">Todas Rações</button>
+
+            </div>
+          </div>
+          <div class="">
+            <ol id="listaRacoes"></ol>
+          </div>
+        </div>
     </div>
+    <footer>
+      <p>Telefone para contato: 51 9092-3445</p>
+      <p>Endereço: Rua Jorgemin, 29 - CEP 90289430 / Altamira - PR</p>
+      <p>Desenvolvido por Fabiane Zanoni</p>
+    </footer>
 </body>
+<script src="../script.js"></script>
 </html>
