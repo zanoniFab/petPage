@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>PetShop</title>
+</head>
+<body class="d-flex  flex-column align-items-center h-100">
+    <header class="w-100">
+        <nav class="navbar" class="d-flex align-items-center">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/logo.avif" width="30" height="30" alt="">
+            </a>
+            <div class="navbar-btns">
+              <ul class="navbar-nav mr-auto flex-row w-10 align-items-center">
+                <li class="nav-item m-10 active">
+                  <a class="nav-link" href="#">Loja</a>
+                </li>
+                <li class="nav-item m-10">
+                  <a class="nav-link disabled" href="#">Agenda</a>
+                </li>
+                <li class="nav-item m-10">
+                  <a class="nav-link" href="paginas/login.html">Login</a>
+                </li>
+                <li class="nav-item m-10">
+                  <a class="nav-link" href="paginas/cadastro.html">Cadastre-se</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="d-flex flex-column bd-highlight mb-3">
+                    <button type="button" class="btn btn-primary">Ração Seca</button>
+                    <button type="button" class="btn btn-primary">Ração Molhada</button>
+                </div>
+            </div>
+            <div class="col">
+              <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                  <input type="text" class="form-control" id="buscarProduto" placeholder="Informe um produto">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+              </form>
+              <div id="listaRacoes">
+
+              </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

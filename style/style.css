@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    flex-direction: column;
+}
+
+.formLogin {
+    max-width: 300px;
+}
+
+.navbar-btns ul li{
+    margin: 10px;
+}
+
+.div-pets p {
+    margin-right: 10px;
+}
