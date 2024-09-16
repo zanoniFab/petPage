@@ -31,14 +31,44 @@
   <div class="formLogin d-flex w-100 align-items-center h-100">
     <form class="d-flex align-items-center flex-column">
         <div class="form-group w-100">
-            <label for="inputEmail1">Nome</label>
-            <input type="text" class="form-control " placeholder="Seu nome">
+            <label for="inputNome">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Seu nome">
             <small id="emailHelp" class="form-text text-muted">Informe seu nome completo.</small>
-          </div>
-      <div class="form-group">
+        </div>
+        <div class="form-group w-100">
+          <label for="inputEndereco">Endereço</label>
+          <input type="text" class="form-control " placeholder="Seu endereço">
+          <small id="emailHelp" class="form-text text-muted">Informe seu endereço completo.</small>
+        </div>
+        <div class="form-group w-100">
+          <label for="inputTelefone">Telefone</label>
+          <input type="number" class="form-control" id="inputTelefone" placeholder="Seu telefone">
+        </div>
+      <div class="form-group w-100">
         <label for="inputEmail1">Endereço de email</label>
         <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
         <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+      </div>
+      <div class="form-group w-100">
+        <label for="inputPetNome">Nome do seu Pet</label>
+        <input type="text" class="form-control" id="inputPetNome" aria-describedby="emailHelp" placeholder="Nome do seu pet">
+      </div>
+      <div class="form-group w-100 d-flex justify-content-between flex-column">
+        <label for="inputPetNome">Selecione o Tipo do seu Pet</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecione o Tipo</option>
+          <option value="1">Cachorro</option>
+          <option value="2">Gato</option>
+          <option value="3">Outros</option>
+        </select>
+      </div>
+      <div class="form-group w-100">
+        <label for="inputPetTemp">Temperamento</label>
+        <input type="text" class="form-control" id="inputPetRaca" aria-describedby="emailHelp" placeholder="Se ele é brabo, calmo">
+      </div>
+      <div class="form-group w-100">
+        <label for="inputPetRaca">Raça</label>
+        <input type="text" class="form-control" id="inputPetRaca" aria-describedby="emailHelp" placeholder="Raça do seu pet">
       </div>
       <div class="form-group w-100">
         <label for="inputPassword1">Senha</label>
@@ -48,8 +78,8 @@
         <label for="inputPassword2">Confirme a sua senha</label>
         <input type="password" class="form-control" id="inputPassword2" placeholder="Confirme a senha">
       </div>
-      <button class="btn btn-primary">
-        <a class="nav-link btn btn-primary"href="../index.html">Enviar</a>
+      <button class="btn btn-primary" >
+        <a class="nav-link btn btn-primary" href="../index.html">Enviar</a>
       </button>
     </form>
   </div>
